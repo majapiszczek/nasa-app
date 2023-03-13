@@ -1,0 +1,53 @@
+.PicturePage {
+  padding: 30px;
+  background-image: url(/images/background.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: white;
+  display: flex;
+  justify-content: center;
+}
+
+.PicturePage .content {
+  max-width: 600px;
+  padding: 50px;
+  border-radius: 10px;
+  text-align: center;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.PicturePage img {
+  margin: 0 auto;
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+  transition: all 150ms ease-in-out;
+}
+
+.PicturePage img:hover {
+  cursor: pointer;
+  transform: scale(1.1);
+}
+
+.PicturePage .picture p {
+  text-align: left;
+}
+
+.PicturePage h2 {
+  font-size: 50px;
+}
+
+.PicturePage .description {
+  margin-top: 80px;
+  line-height: 24px;
+}
+
+@media (max-width: 400px) {
+  .PicturePage {
+    padding: 10px;
+  }
+  .PicturePage .content {
+    padding: 20px;
+  }
+}
