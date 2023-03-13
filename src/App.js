@@ -1,15 +1,25 @@
+import React, { useState } from "react";
 import "./App.css";
+import PictureOfTheDay from "./PictureOfTheDay";
 
 function App() {
-  const apiKey = "sDb8iiEZI57VCsfkNMl0Gk8XVhPtgkNQg9jxlHK1";
-  const apiUrl = `https: //api.nasa.gov/insight_weather/?api_key=${apiKey}&feedtype=json&ver=1.0`;
+  const [clicked, setClicked] = useState(false);
 
-  return (
-    <div className="App">
-      <h1>hello</h1>
-      <a href={apiUrl}>link</a>
-    </div>
-  );
+  function handleClick(event) {
+    event.preventDefault();
+    setClicked(true);
+  }
+
+  if (clicked) {
+    return <PictureOfTheDay />;
+  } else {
+    return (
+      <div className="App">
+        <h1>Click the button to see astronomy picture of the day!</h1>
+        <button onClick={handleClick}>Click me</button>
+      </div>
+    );
+  }
 }
 
 export default App;
