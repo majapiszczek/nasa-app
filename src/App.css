@@ -2,4 +2,35 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url(/images/background.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.main {
+  border-radius: 10px;
+  text-align: center;
+  padding: 140px 60px;
+  margin: 20px;
+  max-width: 600px;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.App button {
+  font-size: 20px;
+  padding: 20px 40px;
+  border-radius: 20px;
+  background-color: rgb(255, 255, 255);
+  border: 1px solid rgb(255, 255, 255);
+}
+
+.App h1 {
+  font-size: 36px;
+  margin-bottom: 80px;
+  color: rgb(255, 255, 255);
 }

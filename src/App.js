@@ -15,8 +15,10 @@ function App() {
   } else {
     return (
       <div className="App">
-        <h1>Click the button to see astronomy picture of the day!</h1>
-        <button onClick={handleClick}>Click me</button>
+        <div className="main">
+          <h1>Click the button to see astronomy picture of the day!</h1>
+          <button onClick={handleClick}>Click me</button>
+        </div>
       </div>
     );
   }
